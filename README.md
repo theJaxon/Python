@@ -3,7 +3,7 @@ Python related scripts
 
 ### properties_compare
 - Compares 2 application.properties files
-- Split occurs on `equal` sign where the part on the left of the equal is treated as dictionary key adn the part to the right is treated as dictionary value
+- Split occurs on `equal` sign where the part on the left of the equal is treated as dictionary key and the part to the right is treated as dictionary value
 - New lines and hashes (file comments) are excluded
 - Each file generates a dictionary and [deepdiff](https://github.com/seperman/deepdiff) compares between them
 - The output is in json format making it easy to call the script as follows 
