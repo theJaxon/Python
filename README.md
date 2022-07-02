@@ -35,3 +35,25 @@ python3 properties_compare.py | jq
   }
 }
 ```
+
+---
+
+### yaml_kind_summary
+- Shows a summary for kubernetes resource `kind` field
+- Sometimes before installing any YAML manifests one needs to get an idea about what exactly will be deployed so this script is fed a YAML file name and it shows the number of kinds found
+
+```python
+python3 yaml_kind_summary.py | jq
+```
+
+```json
+{
+  "CustomResourceDefinition": 5,
+  "ServiceAccount": 1,
+  "ClusterRole": 4,
+  "ClusterRoleBinding": 1,
+  "Secret": 1,
+  "Service": 1,
+  "Deployment": 1
+}
+```
