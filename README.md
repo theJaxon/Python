@@ -43,7 +43,7 @@ python3 properties_compare.py | jq
 - Sometimes before installing any YAML manifests one needs to get an idea about what exactly will be deployed so this script is fed a YAML file name and it shows the number of kinds found
 
 ```python
-python3 yaml_kind_summary.py | jq
+python3 yaml_kind_summary.py <yaml_file>.yaml | jq
 ```
 
 ```json
