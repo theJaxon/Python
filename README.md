@@ -1,4 +1,7 @@
 # Python
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=Python&logoColor=yellow)
+
 Python related scripts
 
 ### properties_compare
@@ -55,5 +58,28 @@ python3 yaml_kind_summary.py <yaml_file>.yaml | jq
   "Secret": 1,
   "Service": 1,
   "Deployment": 1
+}
+```
+
+---
+
+### file_extension_summary
+- Recursively iterates over all files under a given path (so sub-directories are indexed as well)
+- Returns a sorted dictionary containing existing file extensions in a specific directory as a key and their total number as a value
+
+```python
+python3 file_extention_summary.py /opt | jq
+```
+
+```json
+# Removed the rest of file extensions so that's a snippet
+{
+  ".rb": 3025,
+  ".html": 145,
+  ".so": 132,
+  ".gemspec": 114,
+  ".md": 82,
+  ".erb": 64,
+  ".mo": 61,
 }
 ```
